@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f1C-0e-AKq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Teleprompter View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TeleprompterViewController" customModule="Teleprompter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJ1-ap-ZUG">
+                                <rect key="frame" x="0.0" y="297" width="375" height="80"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1Yv-eg-h58"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E7F-wy-6Qj">
+                                <rect key="frame" x="20" y="51" width="335" height="572"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="safeArea" id="2YP-yG-5kz"/>
+                                <string key="text">We set sail on this new sea because there is new knowledge to be gained, and new rights to be won, and they must be won and used for the progress of all people. For space science, like nuclear science and all technology, has no conscience of its own. Whether it will become a force for good or ill depends on man, and only if the United States occupies a position of pre-eminence can we help decide whether this new ocean will be a sea of peace or a new terrifying theater of war. I do not say that we should or will go unprotected against the hostile misuse of space any more than we go unprotected against the hostile use of land or sea, but I do say that space can be explored and mastered without feeding the fires of war, without repeating the mistakes that man has made in extending his writ around this globe of ours.
+
+There is no strife, no prejudice, no national conflict in outer space as yet. Its hazards are hostile to us all. Its conquest deserves the best of all mankind, and its opportunity for peaceful cooperation may never come again. But why, some say, the Moon? Why choose this as our goal? And they may well ask, why climb the highest mountain? Why, 35 years ago, fly the Atlantic? Why does Rice play Texas?
+
+We choose to go to the Moon! We choose to go to the Moon in this decade and do the other things, not because they are easy, but because they are hard; because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one we intend to win, and the others, too.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKx-3y-AYY">
+                                <rect key="frame" x="20" y="20" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jt-7j-1sM">
+                                <rect key="frame" x="166" y="20" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFc-aJ-XFP">
+                                <rect key="frame" x="313" y="20" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mEh-gv-bMF">
+                                <rect key="frame" x="20" y="20" width="10" height="603"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="a5K-xd-UbD"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="f3F-Ft-pmt" appends="YES" id="crV-dZ-Hzj"/>
+                                </connections>
+                            </view>
+                            <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rnm-tV-jkm">
+                                <rect key="frame" x="345" y="20" width="10" height="603"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="z6G-Ar-7RX"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZYv-78-Cko" appends="YES" id="ew0-G3-y35"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78605826428885206" green="0.78226088136958227" blue="0.78985564720812185" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="FFc-aJ-XFP" firstAttribute="centerY" secondItem="5jt-7j-1sM" secondAttribute="centerY" id="AeF-Cc-idI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E7F-wy-6Qj" secondAttribute="bottom" id="Hei-7K-n3V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kJ1-ap-ZUG" secondAttribute="trailing" id="JVd-j9-VSU"/>
+                            <constraint firstItem="E7F-wy-6Qj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MYY-HN-3Oe"/>
+                            <constraint firstItem="E7F-wy-6Qj" firstAttribute="top" secondItem="aKx-3y-AYY" secondAttribute="bottom" constant="10" id="Mou-VS-qLg"/>
+                            <constraint firstItem="5jt-7j-1sM" firstAttribute="centerY" secondItem="aKx-3y-AYY" secondAttribute="centerY" id="N3D-MS-Ouh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mEh-gv-bMF" secondAttribute="bottom" id="QMG-be-Msa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E7F-wy-6Qj" secondAttribute="trailing" constant="20" id="RLk-ww-wgS"/>
+                            <constraint firstItem="mEh-gv-bMF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TxA-fK-tIV"/>
+                            <constraint firstItem="aKx-3y-AYY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XXy-zM-t7s"/>
+                            <constraint firstItem="5jt-7j-1sM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cEv-Uv-l3b"/>
+                            <constraint firstItem="rnm-tV-jkm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cij-zg-DdK"/>
+                            <constraint firstItem="mEh-gv-bMF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dJ9-Zq-6S8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rnm-tV-jkm" secondAttribute="bottom" id="e6d-a1-eUq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rnm-tV-jkm" secondAttribute="trailing" constant="20" id="efe-MQ-ndC"/>
+                            <constraint firstItem="kJ1-ap-ZUG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kb6-Li-QoY"/>
+                            <constraint firstItem="E7F-wy-6Qj" firstAttribute="centerY" secondItem="kJ1-ap-ZUG" secondAttribute="centerY" id="tXW-tV-0iD"/>
+                            <constraint firstItem="aKx-3y-AYY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vnv-wJ-U9O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FFc-aJ-XFP" secondAttribute="trailing" constant="20" id="yT5-3v-Dk1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="e52-rr-Jcy" appends="YES" id="TgY-4W-Bss"/>
+                        </connections>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="play" id="s0R-WG-KIP">
+                            <connections>
+                                <action selector="start:" destination="BYZ-38-t0r" id="gpe-eE-hcX"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="pause" id="Zrg-JO-qNE">
+                            <connections>
+                                <action selector="pause:" destination="BYZ-38-t0r" id="St3-Fh-Iea"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="stop" id="8wX-Fk-ecq">
+                            <connections>
+                                <action selector="stop:" destination="BYZ-38-t0r" id="lv3-6M-Rp1"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="PiH-E5-Wdf"/>
+                        <barButtonItem systemItem="action" id="zq9-Ii-HKe">
+                            <connections>
+                                <action selector="flip:" destination="BYZ-38-t0r" id="jfb-J6-qpf"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="nru-hY-qKC"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="leftDragbarLeadingConstraint" destination="TxA-fK-tIV" id="h4n-ev-mi5"/>
+                        <outlet property="leftLabel" destination="aKx-3y-AYY" id="BfR-b5-R6g"/>
+                        <outlet property="middleLabel" destination="5jt-7j-1sM" id="PGv-6b-o27"/>
+                        <outlet property="rightDragbarTrailingConstraint" destination="efe-MQ-ndC" id="VUB-kf-DRT"/>
+                        <outlet property="rightLabel" destination="FFc-aJ-XFP" id="4c0-CY-d2M"/>
+                        <outlet property="textView" destination="E7F-wy-6Qj" id="wiV-sv-s5b"/>
+                        <outlet property="textViewLeadingConstraint" destination="MYY-HN-3Oe" id="4yY-rP-1KC"/>
+                        <outlet property="textViewTrailingConstraint" destination="RLk-ww-wgS" id="0pr-p7-6iq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="e52-rr-Jcy">
+                    <connections>
+                        <action selector="pinchZoom:" destination="BYZ-38-t0r" id="Un2-6o-kxd"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="f3F-Ft-pmt">
+                    <connections>
+                        <action selector="dragLeftEdge:" destination="BYZ-38-t0r" id="d9A-sf-n5o"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ZYv-78-Cko">
+                    <connections>
+                        <action selector="dragRightEdge:" destination="BYZ-38-t0r" id="QXF-e2-Lm1"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="400.80000000000001" y="-74.212893553223395"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZD2-qk-TgM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" toolbarHidden="NO" id="f1C-0e-AKq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DjN-5A-AHc">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Nd-Az-UQD">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PIY-b0-nC9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IPb-iJ-kz0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-347.19999999999999" y="-73.763118440779621"/>
+        </scene>
+    </scenes>
+</document>
